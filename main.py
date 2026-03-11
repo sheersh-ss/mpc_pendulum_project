@@ -10,8 +10,8 @@ def main():
 
     # pick one file as trajectory example
     example = sorted(results, key=lambda x: (x["summary"]["horizon"], x["summary"]["r_u"]))[-1]
-    plot_example_trajectory(example, "results/figures/example_trajectory.pdf")
-    plot_success_vs_horizon(results, "results/figures/success_vs_horizon.pdf")
+    plot_example_trajectory(example, "results/figures/example_trajectory.png")
+    plot_success_vs_horizon(results, "results/figures/success_vs_horizon.png")
 
 if __name__ == "__main__":
     main()

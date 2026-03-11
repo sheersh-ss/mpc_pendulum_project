@@ -24,7 +24,7 @@ def plot_example_trajectory(result_json, save_path):
     plt.xlabel("Time step")
     plt.ylabel("Angle")
     plt.tight_layout()
-    plt.savefig(save_path.replace(".pdf", "_angle.pdf"))
+    plt.savefig(save_path.replace(".png", "_angle.png"))
     plt.close()
 
     plt.figure(figsize=(8, 3))
@@ -32,7 +32,7 @@ def plot_example_trajectory(result_json, save_path):
     plt.xlabel("Time step")
     plt.ylabel("Angular velocity")
     plt.tight_layout()
-    plt.savefig(save_path.replace(".pdf", "_omega.pdf"))
+    plt.savefig(save_path.replace(".png", "_omega.png"))
     plt.close()
 
     plt.figure(figsize=(8, 3))
@@ -40,7 +40,7 @@ def plot_example_trajectory(result_json, save_path):
     plt.xlabel("Time step")
     plt.ylabel("Torque")
     plt.tight_layout()
-    plt.savefig(save_path.replace(".pdf", "_action.pdf"))
+    plt.savefig(save_path.replace(".png", "_action.png"))
     plt.close()
 
 def plot_success_vs_horizon(results, save_path):
